@@ -1,0 +1,700 @@
+// import React from "react";
+// import "./App.css";
+// import { Routes, Route } from "react-router-dom";
+// import { useSelector, useDispatch } from "react-redux";
+// import { increment, decrement } from "./redux/counterSlice";
+// import Header from "./components/Header";
+// import Navbar from "./pages/Navbar";
+// import Main from "./components/Main";
+// import Experince from "./pages/Experience";
+// import AboutPage from "./pages/AboutPage";
+// import ProjectsPage from "./pages/ProjectsPage";
+// import ContactPage from "./pages/ContactPage";
+// import Footer from "./components/Footer";
+
+// function App() {
+//   const dispatch = useDispatch();
+//   const { value } = useSelector((store) => store.counter);
+
+//   console.log(value);
+
+//   return (
+//     <div>
+//       {/* Header -- Navbar,ThemeToggle,AboutPage */}
+//       <Header />
+//       <Navbar />
+//       {/* first line -- until main page  */}
+//       <Main />
+//       {/* second line is over start to line -- footer line*/}
+//       <Routes>
+//         <Route path="/" element={<Experince />} />
+//         <Route path="/about" element={<AboutPage />} />
+//         <Route path="/projects" element={<ProjectsPage />} />
+//         <Route path="/contact" element={<ContactPage />} />
+//       </Routes>
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+// import React from 'react'
+
+// const Navbar = () => {
+//   return (
+//     <div>
+//       <h2>
+//         Portfolio
+//       </h2>
+//       <div>
+//         <ul>
+//           <li>
+//             <a href="/Header">Home</a>
+//           </li>
+//           <li>
+//             <a href="/about">About</a>
+//           </li>
+//           <li>
+//             <a href="/experience">Experience</a>
+//           </li>
+//           <li>
+//             <a href="/projects">Projects</a>
+//           </li>
+//           <li>
+//             <a href="/contact">Contact</a>
+//           </li>
+//         </ul>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default Navbar
+
+
+
+
+
+/* .number{
+    display: flex;
+    justify-content: space-between;
+}
+.number-inside{
+    display: flex;
+    justify-content: space-between;
+    gap: 27px;
+}
+.gmail{
+    display: flex;
+    justify-content: space-between;
+}
+.gmail-inside{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+}
+.location-inside{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.phone{
+    cursor: pointer;
+    color: blue;
+}
+
+.gmail{
+    cursor: pointer;
+    color: white;
+}
+
+.location{
+    cursor: pointer;
+    color: red;
+} */
+
+/* .header-all{
+    height: 50vh;
+}
+
+button{
+    color: white;
+    width: auto;
+    height: 50px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 10%;
+    text-align: center;
+}
+
+button:hover{
+    background-color: #4CAF50;
+    color: black;
+    cursor: pointer;
+} */
+
+
+// import React from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faPhone,
+//   faEnvelope,
+//   faMapMarkerAlt,
+// } from "@fortawesome/free-solid-svg-icons";
+// import "../css/ContactPage.css";
+// import "../css/ContactPageResponsive.css";
+
+// const ContactPage = () => {
+//   return (
+//     <div className="contact-all-page">
+//       <h2>Contact Me</h2>
+//       <h3>Get in Touch</h3>
+//       <div className="contact-all-inside">
+
+
+//         <div className="number">
+//           <div>
+//             <h3>Number</h3>
+//           </div>
+
+//           <div className="number-inside">
+//             <FontAwesomeIcon className="phone" icon={faPhone} />
+//             <span> +994 55 936 17 30</span>
+//           </div>
+//         </div>
+
+//         <div className="gmail">
+//           <div>
+//             <h3>Gmail</h3>
+//           </div>
+
+//           <div className="gmail-inside">
+//             <FontAwesomeIcon className="gmail" icon={faEnvelope} /> 
+//             <span>nesreddin19@email.com</span>
+//           </div>
+//         </div>
+
+//         <div className="location">
+//           <div>
+//             <h3>Location</h3>
+//           </div>
+
+//           <div className="location-inside">
+//             <FontAwesomeIcon className="location" icon={faMapMarkerAlt} />
+//             <span> Azerbaijan - Baku City </span>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ContactPage;
+
+
+
+
+
+/* .header-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 80vh;           
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+  
+h1 {
+    font-size: 2.5rem;
+    color: #818589	;
+}
+  
+p {
+    font-size: 1.2rem;
+    color: white;
+}
+  
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.7rem 1.3rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button:hover {
+    background-color: #0056b3;
+} */
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import "../css/Header.css"
+// import "../css/HeaderResponsive.css"
+
+// const Header = () => {
+//   return (
+//     <div>
+//       <div className='header-all'>
+//         <h1>Hi, i'm Guseinovi Nasradin</h1>
+//         <p>
+//         Full Stack Developer 
+//         </p>
+//         <p>
+//         i'm junior level Full Stack Developer | React & Node.js Specialist
+//         </p>
+//         {/* <p>
+//         <a href="https://github.com/GuseinoviNasradin" target="_blank">GitHub</a> |
+//         <a href="https://www.linkedin.com/in/guseinovi-nasradin/" target="_blank">LinkedIn</a>
+//         </p> */}
+
+//         <button>
+//           contact me
+//         </button>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default Header
+
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import "../css/Navbar.css";
+
+
+// const Navbar = () => {
+//   return (
+//     <div className="title">
+//       <h2>Portfolio</h2>
+//       <div>
+//         <ul className="navbar-list">
+//           <li>
+//             <Link to="/">Home</Link> 
+//           </li>
+//           <li>
+//             <Link to="/about">About</Link>
+//           </li>
+//           <li>
+//             <Link to="/experience">Experience</Link>
+//           </li>
+//           <li>
+//             <Link to="/projects">Projects</Link>
+//           </li>
+//           <li>
+//             <Link to="/contact">Contact</Link>
+//           </li>
+//         </ul>
+        
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+// import React from "react";
+// import "../css/ProjectsPage.css";
+// import "../css/ProjectsPageResponsive.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
+// const ProjectsPage = () => {
+//   return (
+//     <div className="projects-page">
+//       <div className="link-description-1">
+//         <p>Click here to check my LinkedIn account</p>
+//         →
+//         <a
+//           href="https://www.linkedin.com/in/nasradin-guseinovi-1a3639323/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           aria-label="LinkedIn Profile"
+//           className="linkedin-link"
+//         >
+//           <FontAwesomeIcon icon={faLinkedin} size="2x" color="white" />
+//         </a>
+//       </div>
+//       <br />
+//       <div className="link-description-2">
+//         <p>Click here to check my GitHub account</p>
+//         →
+//         <a
+//           href="https://github.com/Nasradin24?tab=repositories"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           aria-label="GitHub Profile"
+//           className="github-link"
+//         >
+//           <FontAwesomeIcon icon={faGithub} size="2x" color="white" />
+//         </a>
+//       </div>
+
+//       <div className="social-links"></div>
+//     </div>
+//   );
+// };
+
+// export default ProjectsPage;
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSun } from "@fortawesome/free-solid-svg-icons";
+// import "../css/Navbar.css";
+
+// const Navbar = () => {
+//   return (
+//     <div className="title">
+//       <h2>Nasradin Guseinovi</h2>
+//       <div>
+//         <ul className="navbar-list">
+//           <li>
+//             <Link to="/">Home</Link>
+//           </li>
+//           <li>
+//             <Link to="/about">About</Link>
+//           </li>
+//           <li>
+//             <Link to="/experience">Experience</Link>
+//           </li>
+//           <li>
+//             <Link to="/projects">Projects</Link>
+//           </li>
+//           <li>
+//             <Link to="/contact">Contact</Link>
+//           </li>
+//           <li className="sun-icon">
+//             <FontAwesomeIcon icon={faSun} />
+//           </li>
+//         </ul>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+
+
+// import React from "react";
+// import { Link, useNavigate } from "react-router-dom";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSun } from "@fortawesome/free-solid-svg-icons";
+// import "../css/Navbar.css";
+
+// const Navbar = () => {
+//   const navigate = useNavigate();
+
+//   const handleTitleClick = () => {
+//     navigate("/");
+//   };
+
+//   return (
+//     <div className="title">
+//       <h2 onClick={handleTitleClick} style={{ cursor: "pointer", color: "inherit" }}>
+//         Nasradin Guseinovi
+//       </h2>
+//       <div>
+//         <ul className="navbar-list">
+//           <li>
+//             <Link to="/">Home</Link>
+//           </li>
+//           <li>
+//             <Link to="/about">About</Link>
+//           </li>
+//           <li>
+//             <Link to="/experience">Experience</Link>
+//           </li>
+//           <li>
+//             <Link to="/projects">Projects</Link>
+//           </li>
+//           <li>
+//             <Link to="/contact">Contact</Link>
+//           </li>
+//           <li className="sun-icon">
+//             <FontAwesomeIcon icon={faSun} />
+//           </li>
+//         </ul>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+
+
+// import React from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import "../css/Header.css";
+// import "../css/HeaderResponsive.css";
+
+// const Header = () => {
+//   const navigate = useNavigate();
+
+//   const handleContactClick = () => {
+//     navigate("/contact");
+//   };
+
+//   return (
+//     <div>
+//       <div className='header-all'>
+//         <h1>Hi, I'm Guseinovi Nasradin</h1>
+//         <p>Full Stack Developer</p>
+//         <p>I'm junior level Full Stack Developer | React & Node.js Specialist</p>
+        
+//         <button onClick={handleContactClick}>
+//           Contact Me
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Header;
+
+// import React from "react";
+// import "./App.css";
+// import { Routes, Route } from "react-router-dom";
+// import { useSelector, useDispatch } from "react-redux";
+// import { increment, decrement } from "./redux/counterSlice";
+// import Header from "./components/Header";
+// import Navbar from "./pages/Navbar";
+// import Experience from "./pages/Experience";
+// import AboutPage from "./pages/AboutPage";
+// import ProjectsPage from "./pages/ProjectsPage";
+// import ContactPage from "./pages/ContactPage";
+// import Footer from "./components/Footer";
+
+// function App() {
+//   const dispatch = useDispatch();
+//   const { value } = useSelector((store) => store.counter);
+
+//   console.log(value);
+
+//   return (
+//     <div>
+//       <Navbar />
+//       <Routes>
+//         {/* Route for the Header component */}
+//         <Route path="/" element={<Header />} />
+//         <Route path="/about" element={<AboutPage />} />
+//         <Route path="/experience" element={<Experience />} />
+//         <Route path="/projects" element={<ProjectsPage />} />
+//         <Route path="/contact" element={<ContactPage />} />
+//         <Route path="/footer" element={<Footer />} />
+//       </Routes>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+// import React from 'react';
+// import "../css/Footer.css";
+// import "../css/FooterResponsive.css";
+// import imagefooter from "../assets/images/az-flag.png";
+
+// function Footer() {
+//   return (
+//     <footer className="footer-last">
+//       <p>© 2024 Guseinovi Nasradin.</p>
+//       <p>Switch language to: <img src={imagefooter} width={20} alt="Azerbaijan Flag" /></p>
+//     </footer>
+//   );
+// }
+
+// export default Footer;
+
+
+// import React from 'react'
+// import "../css/Experience.css";
+// import "../css/ExperienceReponsive.css";
+
+
+// const Experience = () => {
+//   return (
+//     <div className='experience'>
+//       <div className="first-side">
+//         <h3>My Experience</h3>
+//         <br />
+//         <h4>
+//         Junior Frontend Developer
+//         </h4>
+//         <br />
+//         <h4>2024 | Agile Solutions LLC.</h4>
+//       </div>
+//       <div className="second-side">
+//         <h3>My Education</h3>
+//         <br />
+//         <h4>University</h4>
+//         <br />
+//         <h4>2017-2021 | Baku</h4>
+//         <br />
+//         <h4>Bachelor`s Degree in Mechanical Engineering.Azerbaijan Technical University</h4>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default Experience
+
+// src/pages/Experience.js
+
+
+
+
+// import React from "react";
+// import "../css/ProjectsPage.css";
+// import "../css/ProjectsPageResponsive.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
+// const ProjectsPage = () => {
+//   return (
+//     <div className="projects-page">
+//       <div className="link-description-1">
+//         <p>
+//           Click here to check my LinkedIn account
+//           <span className="arrow">→</span>
+//         </p>
+//         <a
+//           href="https://www.linkedin.com/in/nasradin-guseinovi-1a3639323/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           aria-label="LinkedIn Profile"
+//           className="linkedin-link"
+//         >
+//           <FontAwesomeIcon icon={faLinkedin} size="2x" color="white" />
+//         </a>
+//       </div>
+//       <div className="link-description-2">
+//         <p>
+//           Click here to check my GitHub account
+//           <span className="arrow">→</span>
+//         </p>
+//         <a
+//           href="https://github.com/Nasradin24?tab=repositories"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           aria-label="GitHub Profile"
+//           className="github-link"
+//         >
+//           <FontAwesomeIcon icon={faGithub} size="2x" color="white" />
+//         </a>
+//       </div>
+//     </div>
+//   );
+// };
+// export default ProjectsPage;
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import { useNavigate } from "react-router-dom";
+// import "../css/Header.css";
+// import "../css/HeaderResponsive.css";
+
+// const Header = () => {
+//   const navigate = useNavigate();
+
+//   const handleContactClick = () => {
+//     navigate("/contact");
+//   };
+
+//   return (
+//     <div>
+//       <div className="header-all">
+//         <h1>Hi, I'm Guseinovi Nasradin</h1>
+//         <p>Full Stack Developer</p>
+//         <p>I'm junior level Full Stack Developer | React & Node.js</p>
+//         <button onClick={handleContactClick}>Contact Me</button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Header;
+
+
+
+
+
+// Last truely code - Navbar.jsx
+
+// import React from "react";
+// import { Link, useNavigate } from "react-router-dom";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSun } from "@fortawesome/free-solid-svg-icons";
+// import "../css/Navbar.css";
+
+// const Navbar = () => {
+//   const navigate = useNavigate();
+
+//   const handleTitleClick = () => {
+//     navigate("/"); 
+//   };
+
+//   return (
+//     <div className="title">
+//       <h2 onClick={handleTitleClick} style={{ cursor: "pointer", color: "#ffffff" }}>
+//         Nasradin Guseinovi
+//       </h2>
+//       <div>
+//         <ul className="navbar-list">
+//           <li>
+//             <Link to="/about">About</Link>
+//           </li>
+//           <li>
+//             <Link to="/experience">Experience</Link>
+//           </li>
+//           <li>
+//             <Link to="/projects">Projects</Link>
+//           </li>
+//           <li>
+//             <Link to="/contact">Contact</Link>
+//           </li>
+//           <li className="sun-icon">
+//             <FontAwesomeIcon icon={faSun} />  
+//           </li>
+//         </ul>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
