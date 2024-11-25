@@ -1,39 +1,6 @@
-// import React from 'react';
-// import { useTranslation } from 'react-i18next';
-// import "../css/AboutPage.css";
-// import "../css/AboutPageResponsive.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-// import myCV from "../assets/Nasradin_20241104_210659_0000.pdf";
-
-// const AboutPage = () => {
-//   const { t } = useTranslation();
-
-//   return (
-//     <div>
-//       <div className="all-about">
-//         <h1>{t('about')}</h1>
-//         <p>{t('welcome')}</p>
-//         <a href={myCV} download="My_CV">
-//           <button>
-//             {t('downloadCV')}
-//             <FontAwesomeIcon
-//               icon={faArrowDown}
-//               style={{ marginLeft: "10px", color: "white" }}
-//             />
-//           </button>
-//         </a>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default AboutPage;
-
-
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Container, Row, Col, Button } from 'react-bootstrap'; // Bootstrap components
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import "../css/AboutPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";

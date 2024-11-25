@@ -28,7 +28,6 @@ const CustomNavbar = () => {
         onClick={toggleMenu}
       />
 
-      {/* Navbar list */}
       <ul className={`navbar-list ${menuOpen ? "active" : ""}`}>
         <li>
           <Link to="/about">About</Link>
@@ -41,9 +40,6 @@ const CustomNavbar = () => {
         </li>
         <li>
           <Link to="/contact">Contact</Link>
-        </li>
-        <li className="sun-icon">
-          <FontAwesomeIcon icon={faSun} />
         </li>
       </ul>
     </div>
